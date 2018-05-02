@@ -14,14 +14,14 @@ async def on_ready():
 
 @bot.command()
 async def help(ctx):
-    em = discord.Embed(color=discord.Color(value=0x00ff00), title="WCL Bot Help")
-    em.add_field(name="invite", value="Gives CCL's server invite link.", inline=False)
-    em.add_field(name="events", value="Gets CCL's upcoming events.", inline=False)
+    em = discord.Embed(color=discord.Color(value=0x00ff00), title="CCA Bot Help")
+    em.add_field(name="invite", value="Gives CCA's server invite link.", inline=False)
+    em.add_field(name="events", value="Gets CCA's upcoming events.", inline=False)
     em.add_field(name="winners", value="Gets winners of previous seasons.", inline=False)
-    em.add_field(name="rules", value="Gets the rules for CCL.", inline=False)
-    em.add_field(name="roster", value="Gets the link for the CCL roster.", inline=False)
-    em.add_field(name="website", value="Gets the CCL website.", inline=False)
-    em.add_field(name="media", value="Gets links to all of CCL's social media.", inline=False)
+    em.add_field(name="rules", value="Gets the rules for CCA.", inline=False)
+    em.add_field(name="roster", value="Gets the link for the CCA roster.", inline=False)
+    em.add_field(name="website", value="Gets the CCA website.", inline=False)
+    em.add_field(name="media", value="Gets links to all of CCA's social media.", inline=False)
     em.set_thumbnail(url="https://scontent-atl3-1.cdninstagram.com/vp/5c554a60f786fd5298e3a01d3063940b/5B774960/t51.2885-15/s1080x1080/e15/fr/29093015_1791620990897131_3863801241461063680_n.jpg")
     await ctx.send(embed=em)
     
