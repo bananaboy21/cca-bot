@@ -61,6 +61,21 @@ async def website(ctx):
     """Gets the CCL website."""
     await ctx.send("Website: https://besotted-dominion.000webhostapp.com/index.html")
     
+
+@bot.command(aliases=['addrole', 'giverole'])
+@commands.has_permissions(manage_roles = True)
+async def role(ctx, user: discord.Member, role=None):
+    if role is None:
+        return await ctx.send("Please enter the role you want to give! Usage: *role [tag person] [role name]")
+    try:
+        r = discord.utils.get(ctx.guild.roles, name=role)
+        if r is None:
+            return await ctx.send("No roles found with that given name. Names must be case-sensitive.")
+        await user.add_roles(r)
+        await ctx.send(f"Successfully gave **{str(user)}** the **{r.name}** role.")
+    except discord.Forbidden:
+        await ctx.send("Bot does not have Manage Roles permission.")
+    
     
 @bot.command(aliases=['social', 'socialmedia', 'sm'])
 async def media(ctx):
