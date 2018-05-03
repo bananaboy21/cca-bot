@@ -22,6 +22,7 @@ async def help(ctx):
     em.add_field(name="roster", value="Gets the link for the CCA roster.", inline=False)
     em.add_field(name="website", value="Gets the CCA website.", inline=False)
     em.add_field(name="media", value="Gets links to all of CCA's social media.", inline=False)
+    em.add_field(name="role [user] [role name]", value="Gives a role to the tagged user.", inline=False)
     em.set_thumbnail(url="https://scontent-atl3-1.cdninstagram.com/vp/5c554a60f786fd5298e3a01d3063940b/5B774960/t51.2885-15/s1080x1080/e15/fr/29093015_1791620990897131_3863801241461063680_n.jpg")
     await ctx.send(embed=em)
     
