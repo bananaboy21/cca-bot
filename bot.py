@@ -80,7 +80,15 @@ async def role(ctx, user: discord.Member, role=None):
     
 @bot.command(aliases=['social', 'socialmedia', 'sm'])
 async def media(ctx):
-    await ctx.send("__**Social Media**__ \n\n**Facebook:** https://m.facebook.com/Clash-Challenge-Academy-CCA-309095529618524/\n**Instagram:**https://www.instagram.com/p/BgksMZGH-tq/")
+    await ctx.send("""
+    **INSTAGRAM PAGE**
+    https://www.instagram.com/p/BgksMZGH-tq/
+
+    **TWITTER PAGE**
+    https://mobile.twitter.com/AnandIy71197139
+
+    **FACEBOOK PAGE**
+    https://m.facebook.com/Clash-Challenge-Academy-2531555340402400/""")
     
 bot.run(os.environ.get('TOKEN'))
     
